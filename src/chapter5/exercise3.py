@@ -16,6 +16,13 @@ while True:
     value1 = float(value)
     if value1 >-1 and value1*100%5==0:
         print(value1)
+        print('Menu of deposits:')
+        print('\'n\' - deposit a nickel')
+        print('\'d\' - deposit for dime')
+        print('\'q\' - for quarter')
+        print('\'o\' - for one dollar bill')
+        print('\'f\' - for five dollar bill')
+        print('\'c\' -for cancel purchase')
     else :
         print('Illegal price: Must be a non-negative multiple of 5 cents.')
     
