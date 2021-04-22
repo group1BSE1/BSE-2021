@@ -17,6 +17,5 @@ while True:
     if value1 >-1 and value1*100%5==0:
         print(value1)
     else :
-        print('Illegal price: Must be a non-negative multiple of 5 cents.
-')
+        print('Illegal price: Must be a non-negative multiple of 5 cents.')
     
