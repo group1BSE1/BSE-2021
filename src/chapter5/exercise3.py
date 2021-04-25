@@ -1,12 +1,12 @@
+#1. MWESIGA ELIAN 2020/BSE/042/PS
+#2. DESIRE BENJAMIN 2020/BSE/113/PS 
+#3. SSETIMBA ANTHONY 2020/BSE/161/PS
+#4. NIMUSIIMAH MATTHEW 2020/BSE/131/PS1
 nickels = 25
 dimes = 25
 quarters = 25
 ones = 0
 fives =0
-
-def change():
-    chang = amountpaid - cents
-    print('change:',chang)
 while True:
     print('Welcome to the vending machine change maker program')
     print('Change maker initialized')
@@ -60,20 +60,18 @@ while True:
                     break
                 dollars = cents //100
                 if dollars >0:
-                    print('Payment due',dollars,'dollars',cents%100,'cents')
+                    print('Payment due',dollars,'dollars',round(cents%100),'cents')
                 #print('pay',pay)
                 else:
-                    print('Payment due',cents%100,'cents')
+                    print('Payment due',round(cents%100),'cents')
                 
-                print('amountpaid',amountpaid)
+                #print('amountpaid',amountpaid)
 
             #print(value,value1)
                     
-        else:
-                if cents<0:
-                    print('cha')
+        
         change = amountpaid - cents
-        print('Please take your change below\n',round(abs(cents)))
+        print('Please take your change below\n',round(abs(cents)),'cents')
         continue
         
     
