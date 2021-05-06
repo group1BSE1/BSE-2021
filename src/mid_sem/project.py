@@ -8,8 +8,8 @@ while True:
         iread = float(input("Enter init read: "))
         fread = float(input('Enter final reading: '))
     except:
-        #print('Please enter valid input')
-        break
+        print('Please enter valid input')
+        continue
     
     if iread>0 and fread<999999999:
         if iread<fread:
@@ -37,4 +37,4 @@ while True:
     print('Initial reading: ',iread)
     print('Final reading: ',fread)
     print('Gallons used: ',gallons)
-    print('Amount used: ', round(amount,2))
+    print('Amount used: ', '$'+str(round(amount,2)))
